@@ -1,6 +1,7 @@
 ### Introduce myself
 - South Korea
 - Web Dev
+- I want keep growing as productive, effective engineer, NOT A Coder.
 - Stack: `Javascript(ES6~)`, `NodeJS`, `ExpressJS`, `React Native`, `MongoDB(mongoose)`
 
 ### Career
@@ -10,7 +11,7 @@ I WANT JOB
 ### Private works(or on Univ.)
 
 > 2018
-- [Implement B Plus Tree with Java](https://github.com/TayPark/BPlusTree)
+- `Java` [Implement B Plus Tree with Java](https://github.com/TayPark/BPlusTree)
 
 > 2019
 - `Python` [A Simple Telegram bot with Python](https://github.com/TayPark/stupid-bot)
