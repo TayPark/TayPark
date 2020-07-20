@@ -14,9 +14,9 @@ I WANT JOB
 
 > 2019
 - `Python` [A Simple Telegram bot with Python](https://github.com/TayPark/stupid-bot)
-- `Python ML` [Iris with sklearn](https://github.com/TayPark/portpolio/ML)
+- `Python ML` [Iris with sklearn](https://github.com/TayPark/portpolio/tree/master/ML)
 - `Javascript` [Software engineering assignment-Navigation for bike and bus on Changwon city](https://github.com/TayPark/CWNU19SE_2B)
-- `Java` [Parsing XML and decode](https://github.com/TayPark/portpolio/xLang)
+- `Java` [Parsing XML and decode](https://github.com/TayPark/portpolio/tree/master/xLang)
 
 > 2020
 - `C` [TCP echo system](https://github.com/TayPark/tcp-echo-Clang)
