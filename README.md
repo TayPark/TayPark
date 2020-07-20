@@ -27,7 +27,7 @@ I WANT JOB
 
 ### Collaborative works
 > 2020
-- `NodeJS, MariaDB` [Image board with NodeJS](https://github.com/TayPark/lunarcat-lagacy/tree/master/routes)
+- `NodeJS, MariaDB` [Image board with NodeJS](https://github.com/TayPark/lunarcat-lagacy)
 - `MERN stack` [Open cartoon sharing SNS](on private)
 
 
