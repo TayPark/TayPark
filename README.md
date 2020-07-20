@@ -4,12 +4,9 @@
 - I want keep growing as productive, effective engineer, NOT A Coder.
 - Stack: `Javascript(ES6~)`, `NodeJS`, `ExpressJS`, `React Native`, `MongoDB(mongoose)`
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsamcon)](https://hits.seeyoufarm.com)
-[![Facebook Badge](https://img.shields.io/badge/-Facebook-1877f2?style=round-square&logo=facebook&logoColor=white&link=https://www.facebook.com/jhnam88/)](https://www.facebook.com/jhnam88/)
-[![Instagram Badge](https://img.shields.io/badge/-Instagram-e4405f?style=round-square&logo=instagram&logoColor=white&link=https://www.instagram.com/jhnam88/)](https://www.instagram.com/jhnam88/)
-[![Github Followers](https://img.shields.io/github/followers/samchon?color=06d6a0&label=Github%20Followers&style=round-square)](https://github.com/samchon?tab=followers)
+[![Github Followers](https://img.shields.io/github/followers/taypark?color=06d6a0&label=Github%20Followers&style=round-square)](https://github.com/samchon?tab=followers)
 
-![Github Stats](https://github-readme-stats.vercel.app/api?username=samchon&show_icons=true)
+![Github Stats](https://github-readme-stats.vercel.app/api?username=taypark&show_icons=true)
 
 ### Career
 
