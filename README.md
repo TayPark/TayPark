@@ -4,10 +4,8 @@
 - I want keep growing as productive, effective engineer, NOT A Coder.
 - Stack: `Javascript(ES6~)`, `NodeJS`, `ExpressJS`, `React Native`, `MongoDB(mongoose)`
 
-[![Github Followers](https://img.shields.io/github/followers/taypark?color=06d6a0&label=Github%20Followers&style=round-square)](https://github.com/samchon?tab=followers)
-
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=taypark&show_icons=true)
-![Taypark's stats](https://github-readme-stats.vercel.app/api?username=taypark&show_icons=true)
+
 ### Career
 
 I WANT JOB
