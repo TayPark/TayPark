@@ -4,8 +4,6 @@
 - I want keep growing as productive, effective engineer, NOT A Coder.
 - Stack: `Javascript(ES6~)`, `NodeJS`, `ExpressJS`, `React Native`, `MongoDB(mongoose)`
 
-![Github Stats](https://github-readme-stats.vercel.app/api?username=taypark&show_icons=true)
-
 ### Career
 
 I WANT JOB
