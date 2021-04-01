@@ -1,45 +1,67 @@
-### Taypark
+## Taypark
 - South Korea
-- Backend developer
+- Backend developer, Infra engineer
 - Always be curious on newer techs
-- 개발 스택: 
-  - `Node.js + ES6`, `Java`, `Android`, `MongoDB`, `MySQL`
+- Tech stacks: 
+  - `Node.js + ES6`, `Java`, `Android`, `MongoDB`, `MySQL`, `AWS`
 
-> “요구사항과 비즈니스 로직에 똑바로 집중하자.”라는 모토로 개발하는 `taypark`입니다.
-- 인프라 구성이나 애플리케이션 배포 같은 귀찮고 반복적인 업무들을 자동화하여 빠른 피드백으로 개발자의 생산성을 높이며, 요구사항을 정확하게 파악하여 조직간 실수를 줄이고 협업을 강조하기 위함입니다. 
-- 알고리즘에 따라 CS관련 기본지식을 다시 보거나 개발자 컨퍼런스 보는 것을 좋아합니다. 
-- Backend와 DevOps 업무에 관심이 많습니다.
-- `Node.js`로 웹프로그래밍을 시작했고, 지금도 하고 있습니다. 
-- 최근에는 `Java Spring Boot`를 공부하고 있습니다.
-- 데이터베이스는 `MongoDB`를 주로 사용합니다. 
-  - `Node.js`에서 처리하기 간편하고 스케일링이 쉬우며, 요구사항 변경에 따라 스키마 설계가 유연하기 때문입니다. 
-  - `MySQL`도 사용합니다.
-- 로컬, 개발서버, 프로덕션 서버 등 어디서든지 동작할 수 있도록 저장소를 만듭니다. 
-  - 약간의 세팅병이 있어서, 환경변수까지 모두 날린 다음에 클론을 받고 새로 세팅까지 해봅니다.
+> 요구사항와 비즈니스 로직에 바르게 집중하자라는 모토로 개발하는 **taypark** 입니다. 정확한 비즈니스 요구사항 파악으로 협업을 도모하며 업무의 자동화를 통해 개발 생산성을 높이는 일을 하고 싶습니다.
 
 ## Works
+---
 
-### Private works(or on Univ.)
+**2021.02 ~ [오픈 만화번역 SNS 프로젝트](http://www.epiclogue.com) 의 타입스크립트 마이그레이션**
 
-> 2018
-- `Java` [Implement B Plus Tree with Java](https://github.com/TayPark/BPlusTree)
+- TypeScript 4.0.0+ 마이그레이션
+- TDD도입과 테스트 케이스 강화
+- 로깅 방식 개편(log rotation)
+- Repository pattern, DI pattern 도입
+- 환경변수파일을 기반으로 한 철저한 환경 분리
 
-> 2019
-- `Python` [A Simple Telegram bot with Python](https://github.com/TayPark/stupid-bot)
-- `Python ML` [Iris with sklearn](https://github.com/TayPark/portpolio/tree/master/ML)
-- `Javascript` [Software engineering assignment-Navigation for bike and bus on Changwon city](https://github.com/TayPark/CWNU19SE_2B)
-- `Java` [Parsing XML and decode](https://github.com/TayPark/portpolio/tree/master/xLang)
+---
 
-> 2020
-- `C` [TCP echo system](https://github.com/TayPark/tcp-echo-Clang)
-- `Frontend: React Native, Javascript` [Time and attendance management with bluetooth-beacon](https://github.com/chisacam/dbeacon)
-- `JSP` [Simple CRUD-able board with JSP](https://github.com/TayPark/JSPProject)
-- `NodeJS, AWS` [Upload S3 with NodeJS server](https://github.com/TayPark/node-formidable-s3)
-- `Android`and `NodeJS` [Mobild programming](https://github.com/TayPark/mp-stil-android) and [its server](https://github.com/TayPark/mp-server)
-- `Kafka` and `ELK` [kafka-and-elk](https://github.com/TayPark/kafka-and-elk-example)
-- `NestJS` [nestjs-tutorial](https://github.com/TayPark/nestjs-tutorial)
+**2020.03 ~ [오픈 만화번역 SNS 프로젝트](http://www.epiclogue.com) 와 [문서화](https://api.epiclogue.com/api-docs) 및 유지보수**
 
-### Collaborative works
-> 2020
-- `NodeJS, MariaDB` [Image board with NodeJS](https://github.com/TayPark/lunarcat-lagacy)
-- `MERN stack` [Open cartoon sharing SNS](on private)
+- Node.js 백엔드 개발
+    - HTTP API 설계, 리팩토링, 로깅 고도화
+    - 테스트 도입(Jest), 인증(JWT), API 문서화(Swagger UI)
+    - (2021) 테스트 타겟 DB를 Real DB Test Table에서 Memory DB로 변경
+- MongoDB
+    - 스키마 설계, 이중화, 트랜잭션
+- Docker(-compose)
+    - Frontend: NextJS, Nginx Dockerizing
+    - Backend: Nginx, Express, MongoDB Dockerizing
+- AWS 배포
+    - 애플리케이션 배포 인스턴스 EC2, 정적 파일 S3 사용
+    - 배포 자동화를 위한 CodePipeline 도입(+CodeBuild, CodeDeploy)
+        - Slack webhook과 AWS Lambda 연동
+        - 프론트엔드 서버 구조 변경으로 인한 NextJS서버 Dockerizing 및 CodePipeline 유지보수
+
+---
+
+**2020.11 ~ 2020.12 [안드로이드 앱](https://github.com/TayPark/mp-stil-android), [서버](https://github.com/TayPark/mp-stil-server) 개발 (학부 과제)**
+
+- 요구사항 설계 및 구현
+- 안드로이드(Java)
+    - 서버와 통신하고 데이터에 따라 렌더링
+- 서버
+    - Node.js API 서버
+    - MongoDB
+
+---
+
+**2020.08 ~ 2020.09 [REST API 구현](https://github.com/TayPark/node-rest-api) (오픈 만화번역 SNS 프로젝트의 기반 설계)**
+
+- Node.js 백엔드 개발
+- Database
+    - 캐싱(Redis)
+    - MySQL + Sequelize(ORM)
+- Error reporting
+    - Sentry
+
+---
+
+**2020.04 ~ 2020.05  [React Native 근태관리 App](https://github.com/TayPark/dbeacon) 개발 (졸업작품)**
+
+- React Native (React 16) 앱 UI 및 기능 개발
+- [서버](https://github.com/TayPark/dbeacon_api)와 통신, 데이터에 맞게 렌더링
