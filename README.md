@@ -1,21 +1,39 @@
-## Tay Park
-- South Korea
-- Web Backend Developer, Infra Engineer
-- Always be curious on newer techs
-- Tech stacks: 
-  - `Node.js based on ES6`, `TypeScript`, `Java`, `Android`, `MongoDB`, `MySQL`, `AWS`
+## 박태형(Tay Park)
+- 과학기술정보통신부, 한국정보산업연합회 산하 소프트웨어 마에스트로 12기 연수생
+- 주니어 백엔드 개발자
+- 백엔드, 인프라에 관심
+- 스킬
+  - `Node.js`
+  - `JavaScript` and `TypeScript`
+  - `Java`
+  - `Docker`
+  - `mongoDB`
+  - `MySQL`
+  - `AWS`
+    - `EC2`
+    - `S3`
+    - `CodePipeline`
+    - `Lambda`
 
-> 요구사항와 비즈니스 로직에 바르게 집중하자라는 모토로 개발하는 **taypark** 입니다. 정확한 비즈니스 요구사항 파악으로 협업을 도모하며 업무의 자동화를 통해 개발 생산성을 높이는 일을 하고 싶습니다.
+---
 
-## Works
+반갑습니다! **도메인과 요구사항에 바르게 집중하자**라는 모토로 개발하는 **TayPark** 입니다. 이는 아래의 의미입니다.
+
+1. 주어진 도메인 내에서
+2. 요구사항에 대한 배경을 이해하고 
+3. 내가 해야할 일을 정확하게 파악하여 진행하고
+4. 그것을 온전히 내 것으로 만드는 것입니다.
+
+여러 사람을 만나면서 서로의 어두운 인사이트를 밝혀주는 미팅을 좋아합니다. 잘 부탁드립니다.
+
+## 작업
 
 **2021.02 ~ [오픈 만화번역 SNS 프로젝트](http://www.epiclogue.com) 의 타입스크립트 마이그레이션**
 
 - TypeScript 4.0.0+ 마이그레이션
-- TDD도입과 테스트 케이스 강화
+- TDD도입과 기존 테스트 케이스 강화
 - 로깅 방식 개편(log rotation)
 - Repository pattern, DI pattern 도입
-- 환경변수파일을 기반으로 한 철저한 환경 분리
 
 ---
 
@@ -26,7 +44,9 @@
     - (2020) 테스트 도입(Jest), 인증(JWT)
     - (2021) 테스트 타겟 DB를 Real DB Test Table에서 Memory DB로 변경
     - (2021) 캐시서버 `Redis` 도입
+    - (2021) FE서버 NextJS dockerizing과 AWS CodePipeline 개편
     - (2021)`pm2`기반 클러스터링 도입
+    - (2021) 로깅 방식 개편(rotation)과 풍부한 로그 제공
 - MongoDB
     - (2020) 스키마 설계, 이중화, 트랜잭션 도입
 - Docker(-compose)
