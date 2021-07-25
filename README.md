@@ -1,7 +1,7 @@
 ## 박태형(Tay Park)
-- 과학기술정보통신부, 한국정보산업연합회 산하 소프트웨어 마에스트로 12기 연수생
+- (2021) 과학기술정보통신부, 한국정보산업연합회 산하 소프트웨어 마에스트로 12기 연수생
 - 주니어 백엔드 개발자
-- 백엔드, 인프라에 관심
+- 백엔드, 인프라, 데이터에 관심
 - 스킬
   - `Node.js`
   - `JavaScript` and `TypeScript`
@@ -24,15 +24,23 @@
 3. 내가 해야할 일을 정확하게 파악하여 진행하고
 4. 그것을 온전히 내 것으로 만드는 것입니다.
 
-여러 사람을 만나면서 서로의 어두운 인사이트를 밝혀주는 미팅을 좋아합니다. 잘 부탁드립니다.
+여러 사람을 만나며 서로의 어두운 부분을 밝혀주는 대화을 좋아합니다. 잘 부탁드립니다.
 
 ## 작업
 
+**2021.07 ~ [Spark+ DB updater](https://github.com/SWM-SparkPlus/db-updater) 개발**
+- [Spark+](https://github.com/SWM-SparkPlus)는 [Apache Spark](https://spark.apache.org/)에서 한국 주소체계 데이터와 위치정보 데이터의 효율적인 처리를 위한 pyspark 패키지 개발하는 프로젝트
+  - `db-updater`는 네트워크를 통한 도로명주소 API가 아닌 데이터 지역성 확보를 위한 데이터베이스를 통합하여 구축하고 매일 최신화하는 컴포넌트
+  - [도로명주소 홈페이지](https://www.juso.go.kr/addrlink/addressBuildDevNew.do?menu=match)로 부터 최신 전체 데이터 다운로드(월별) 및 일일 데이터베이스 동기화 스크립트 개발
+  - MySQL Workbench ERD을 이용하여 DDL export, DB define => Prisma를 이용하여 DB model introspect => Prisma model을 기반으로 다운받은 데이터 데이터베이스에 입력 및 일일 업데이트
+
+---
+
 **2021.02 ~ [오픈 만화번역 SNS 프로젝트](http://www.epiclogue.com) 의 타입스크립트 마이그레이션**
 
-- TypeScript 4.0.0+ 마이그레이션
+- TypeScript 4.x 마이그레이션
 - TDD도입과 기존 테스트 케이스 강화
-- 로깅 방식 개편(log rotation)
+- 로깅 방식 개편(rich log, log rotation)
 - Repository pattern, DI pattern 도입
 
 ---
