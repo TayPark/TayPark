@@ -36,7 +36,12 @@
   - [도로명주소 홈페이지](https://www.juso.go.kr/addrlink/addressBuildDevNew.do?menu=match)로 부터 최신 전체 데이터 다운로드(월별) 및 일일 데이터베이스 동기화 스크립트 개발
   - `Prisma` model push를 이용한 데이터베이스 정의
   - `MySQL` 시스템 변수 파일인 **my.cnf**에 대한 이해와 로깅을 이용한 디버깅, 성능 튜닝 경험(프로세스 및 커넥션 수, 로그 명시, 글로벌 변수 관리)
-  - `TypeORM`을 이용한 Dynamic query 수행
+  - 프로세스 최적화 경험
+    - 최초 4개의 통합 테이블 설계(전체 데이터 2000만건), 구축 시간 50분 소요
+    - 17개 광역자치시로 테이블 분리, 25분으로 감소
+    - Process spawning을 이용하여 멀티 프로세싱 작업으로 전환, 12분으로 감소
+    - ARM64아키텍처(M1 Macbook Air)에서 AMD64 아키텍처로 머신 아키텍처 변경. 최대 1분까지 단축 경험(36 vCPUs, 72G RAM) [영상](https://www.youtube.com/watch?v=A-lPvNXl8bs&ab_channel=TayPark)
+  - `TypeORM`을 이용한 Dynamic query 수행(일일 업데이트)
     - 4개의 동일한 스키마를 공유하는 17개의 테이블이 존재(총 68개)
     - 테이블 이름만 다르므로 같은 Entity를 갖는 테이블에 대해 테이블명을 주입받아 메타데이터를 연결한 커넥션에 업데이트하고 쿼리 수행
     - 하지만 비효율성과 성능 문제로 raw query로 전환
