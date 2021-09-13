@@ -1,5 +1,5 @@
 ## 박태형(Tay Park)
-- (2021) 과학기술정보통신부, 한국정보산업연합회 산하 소프트웨어 마에스트로 12기 연수생
+- (2021) 과학기술정보통신부, 한국정보산업연합회 산하 **소프트웨어 마에스트로 12기 연수생**
 - 주니어 백엔드 개발자
 - 백엔드, 인프라, 데이터에 관심
 - 스킬
@@ -28,14 +28,19 @@
 
 ## 작업
 
-**2021.07 ~ [Spark+ DB updater](https://github.com/SWM-SparkPlus/db-updater) 개발**
+**2021.07 ~ 2021.09 [Spark+ DB updater](https://github.com/SWM-SparkPlus/db-updater) 개발**
 - [Spark+](https://github.com/SWM-SparkPlus)는 [Apache Spark](https://spark.apache.org/)에서 한국 주소체계 데이터와 위치정보 데이터의 효율적인 처리를 위한 pyspark 패키지 개발하는 프로젝트
-  - `db-updater`는 네트워크를 통한 도로명주소 API가 아닌 빅데이터 엔진인 Spark에서 데이터 참조를 위해 데이터 지역성 확보를 위한 데이터베이스를 통합하여 구축하고 매일 최신화하는 컴포넌트
+  - `TypeScript`, `Node.js`, `MySQL`, `Prisma`, `TypeORM`, `Docker`, `Shell` 사용
+  - `db-updater`는 네트워크를 통한 도로명주소 API가 아닌 빅데이터 엔진인 Spark에서 데이터 지역성의 확보로 더 빠른 데이터 참조를 돕는 데이터베이스를 통합하여 구축하고 매일 최신화하는 컴포넌트
   - [도로명주소 홈페이지](https://www.juso.go.kr/addrlink/addressBuildDevNew.do?menu=match)로 부터 최신 전체 데이터 다운로드(월별) 및 일일 데이터베이스 동기화 스크립트 개발
-  - ~~MySQL Workbench ERD을 이용하여 DDL export, DB define => Prisma를 이용하여 DB model introspect => Prisma model을 기반으로 다운받은 데이터 데이터베이스에 입력 및 일일 업데이트~~
   - `Prisma` model push를 이용한 데이터베이스 정의
-  - 데이터베이스 import 및 업데이트를 위한 index table 생성 (`Shell scripting`)
-  - `TypeORM`을 이용한 Table dynamic query 수행
+  - MySQL 시스템 변수 파일인 my.cnf에 대한 이해와 로깅을 이용한 디버깅, 성능 튜닝 경험(프로세스 및 커넥션 수, 로그 명시, 글로벌 변수 관리)
+  - `TypeORM`을 이용한 Table dynamic query 수행 후 데이터 정합성 및 성능 문제로 Raw 쿼리로 변경 작성
+  - Docker image와 명령어 아키텍처에 대한 이해
+    - `arm64/v8` 이미지를 M1 맥북에서 실행했을 때와 `amd64` CPU에서 실행했을 때 성능 차이.
+    - 성능 최적화에 포커스를 맞춰 AWS 인스턴스, M1맥북, 인텔CPU 노트북에서 지속적으로 테스트 실행.
+  - GitLab과 GitHub 동시 관리
+  - [한글 및 영어 문서화, 위키 작성](https://github.com/SWM-SparkPlus/db-updater/wiki)
 
 ---
 
