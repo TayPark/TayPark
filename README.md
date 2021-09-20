@@ -3,8 +3,7 @@
 - 주니어 백엔드 개발자
 - 백엔드, 인프라, 데이터에 관심
 - 스킬
-  - `Node.js`
-  - `JavaScript` and `TypeScript`
+  - `Node.js`, `JavaScript(ES6)` and `TypeScript`
   - `Java`
   - `Docker`
   - `mongoDB`
@@ -14,6 +13,7 @@
     - `S3`
     - `CodePipeline`
     - `Lambda`
+    - `SNS`
 
 ---
 
@@ -36,7 +36,7 @@
   - [도로명주소 홈페이지](https://www.juso.go.kr/addrlink/addressBuildDevNew.do?menu=match)로 부터 최신 전체 데이터 다운로드(월별) 및 일일 데이터베이스 동기화 스크립트 개발
   - `Prisma` model push를 이용한 데이터베이스 정의
   - `MySQL` 시스템 변수 파일인 **my.cnf**에 대한 이해와 로깅을 이용한 디버깅, 성능 튜닝 경험(프로세스 및 커넥션 수, 로그 명시, 글로벌 변수 관리)
-    - Node.js의 특징인 비동기 처리를 최대한 활용하기 위해 프로세스 수 모니터링 및 성능 튜닝
+    - Node.js의 특징인 비동기 처리를 최대한 활용하기 위해 MySQL 프로세스 수 모니터링 및 성능 튜닝
   - 프로세스 최적화 경험
     - 최초 4개의 통합 테이블 설계(전체 데이터 2000만건), 구축 시간 50분 소요
     - 17개 광역자치시로 테이블 분리, 25분으로 감소
