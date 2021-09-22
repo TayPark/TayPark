@@ -51,6 +51,9 @@
     - 해당 이미지를 M1 맥북에서 실행했을 때와 인텔 CPU에서 실행했을 때 성능 차이 경험(경우에 따라 5~10배)
     - 성능 최적화에 포커스를 맞춰 AWS 인스턴스, M1맥북, 인텔CPU 노트북에서 지속적으로 테스트 실행.
   - GitLab과 GitHub 동시 관리
+  - AWS 인스턴스 관리
+    - EC2 개발서버 및 데이터베이스 서버 운용
+    - 이벤트 소싱을 위한 SNS, 수신하여 Slack 메세지를 보내는 Lambda 
   - [한글 및 영어 문서화, 위키 작성](https://github.com/SWM-SparkPlus/db-updater/wiki)
 
 ---
