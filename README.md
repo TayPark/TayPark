@@ -10,13 +10,10 @@
   - `MySQL`
   - `Apache Spark`(Pyspark)
   - `AWS`
-    - `EC2`
-    - `S3`
-    - `CodePipeline`
-    - `Lambda`
+    - `EC2`, `S3`, `Lambda`
+    - `CodeBuild`, `CodeDeploy`, `CodePipeline`
+    - `EMR`(Apache Spark 3.1), `MSK`(Kafka 2.6), `Kinesis`
     - `SNS`
-    - `EMR`
-    - `MSK`
 
 ---
 
@@ -32,6 +29,13 @@
 ## 작업
 
 **2021.09 ~ [SPARK+](https://github.com/SWM-SparkPlus/sparkplus) 개발 및 리딩**
+- SPARK+는 Apache Spark에서 국내 주소 데이터의 data pre-processing 및 conversion을 위한 기능을 제공하는 프로젝트
+  - 프로젝트 기획, 개발 및 [아키텍처 설계](https://github.com/SWM-SparkPlus/rdw-reference-architecture)
+  - Python coding convention 제시
+  - 데이터 병목 해결
+    - EMR(Spark cluster)에서 데이터를 읽어올 때 Kinesis가 병목지점 [참고](https://docs.aws.amazon.com/streams/latest/dev/service-sizes-and-limits.html)
+    - MSK(Managed Kafka)로 전환하여 해결했으나 비용적으로 부담
+    - SPARK+ 프로젝트 상황에서는 적절한 선택이었으나 유사한 기술 선택시 목표치와 확장가능성을 염두로 하고 결정하는 것을 배움
 
 **2021.07 ~  [Spark+ DB updater](https://github.com/SWM-SparkPlus/db-updater) 개발 및 유지보수**
 - [SPARK+](https://github.com/SWM-SparkPlus)는 [Apache Spark](https://spark.apache.org/)에서 한국 주소체계 데이터와 위치정보 데이터의 효율적인 처리를 위한 pyspark 패키지 개발하는 프로젝트
@@ -42,12 +46,12 @@
   - `Prisma` model push를 이용한 데이터베이스 정의
   - `MySQL` 시스템 변수 파일인 **my.cnf**에 대한 이해와 로깅을 이용한 디버깅, 성능 튜닝 경험(프로세스 및 커넥션 수, 로그 명시, 글로벌 변수 관리)
     - Node.js의 특징인 비동기 처리를 최대한 활용하기 위해 MySQL 프로세스 수 모니터링 및 성능 튜닝
-  - 데이터베이스 테이블 구축 프로세스 최적화 경험(50분 -> 1분)
+  - 데이터베이스 테이블 구축 프로세스 최적화 경험(Import 작업 50분 -> 1분)
     - 최초 4개의 통합 테이블 설계(전체 데이터 2000만건), 구축 시간 50분 소요
     - 17개 광역자치시로 테이블 분리, 25분으로 감소
     - Process spawning을 이용하여 멀티 프로세싱 작업으로 전환, 12분으로 감소
-    - ARM64아키텍처(M1 Macbook Air)에서 AMD64 아키텍처로 머신 아키텍처 변경. 최대 1분까지 단축 경험(36 vCPUs, 72G RAM)
-    - 전체 구축 프로세스(Download - Import - Update) 최적화로 7분 소요 [영상](https://www.youtube.com/watch?v=NWM1JTonzeI)
+    - ARM64아키텍처(M1 Macbook Air)에서 AMD64 아키텍처로 머신 아키텍처 변경하여 시간 단축, 리소스에 따라 최대 1분까지 단축 경험(36 vCPUs, 72G RAM)
+    - Node.js 비동기 프로그래밍을 통해 전체 구축 프로세스(Download - Import - Update) 최적화로 7분으로 단축 [4vCPU 8G RAM 영상](https://www.youtube.com/watch?v=NWM1JTonzeI)
   - Docker image와 명령어 아키텍처에 대한 이해
     - MySQL 8.0.26 기준 arm64/v8 이미지가 존재하지 않음(Supported architectures: amd64)
     - 해당 이미지를 M1 맥북에서 실행했을 때와 인텔 CPU에서 실행했을 때 성능 차이 경험(경우에 따라 5~10배)
@@ -74,10 +78,10 @@
     - (2020) HTTP API 설계, 리팩토링, 로깅 고도화, 아키텍처 설계
     - (2020) 테스트 도입(Jest), 인증(JWT)
     - (2021) 테스트 타겟 DB를 Real DB Test Table에서 Memory DB로 변경
-    - (2021) 캐시서버 `Redis` 도입
-    - (2021) FE서버 NextJS dockerizing과 AWS CodePipeline 개편
-    - (2021)`pm2`기반 클러스터링 도입
-    - (2021) 로깅 방식 개편(rotation)과 풍부한 로그 제공
+    - (2021) 세션 캐시서버 `Redis` 도입
+    - (2021) FE서버 `NextJS` dockerizing과 AWS CodePipeline 개편
+    - (2021) 백엔드 서버 클러스터링을 위한 `pm2` 도입
+    - (2021) 로깅 로테이션 도입과 HTTP 헤더 및 바디, 세션ID, 응답시간 등을 추가
 - MongoDB
     - (2020) 스키마 설계, 이중화, 트랜잭션 도입
 - Docker(-compose)
