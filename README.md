@@ -1,19 +1,17 @@
 ## 박태형(Tay Park)
-- 2021.04 - 2021.11 과학기술정보통신부, 한국정보산업연합회 산하 **소프트웨어 마에스트로 12기 연수생**
-- 주니어 백엔드 개발자
+- 2021.04 - 2021.11 과학기술정보통신부, 한국정보산업연합회 산하 소프트웨어 마에스트로 12기
 - 백엔드, 인프라, 데이터에 관심
 - 스킬
-  - `Node.js`, `JavaScript(ES6)` and `TypeScript`
-  - `Java`
-  - `Docker`
-  - `mongoDB`
-  - `MySQL`
+  - `Node.js`, `JavaScript(ES6)` and `TypeScript`, `Java`, `Python`
+  - `Docker`(+ `docker-compose`)
+  - `MySQL`, `mongoDB`, `Redis`
   - `Apache Spark`(Pyspark)
   - `AWS`
     - `EC2`, `S3`, `Lambda`
     - `CodeBuild`, `CodeDeploy`, `CodePipeline`
     - `EMR`(Apache Spark 3.1), `MSK`(Kafka 2.6), `Kinesis`
     - `SNS`
+  - `Slack`, `Notion`
 
 ---
 
@@ -29,7 +27,7 @@
 ## 작업
 
 **2021.09 ~ [SPARK+](https://github.com/SWM-SparkPlus/sparkplus) 개발 및 리딩**
-- SPARK+는 Apache Spark에서 국내 주소 데이터의 data pre-processing 및 conversion을 위한 기능을 제공하는 프로젝트
+- [SPARK+](https://github.com/SWM-SparkPlus)는 [Apache Spark](https://spark.apache.org/)에서 한국 주소체계 데이터와 위치정보 데이터의 효율적인 처리를 위한 pyspark 패키지 개발하는 프로젝트
   - 프로젝트 기획, 개발 및 [아키텍처 설계](https://github.com/SWM-SparkPlus/rdw-reference-architecture)
   - Python coding convention 제시
   - 데이터 병목 해결
