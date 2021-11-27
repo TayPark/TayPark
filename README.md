@@ -26,11 +26,12 @@
 **2021.09 ~ [SPARK+](https://github.com/SWM-SparkPlus/sparkplus) 개발 및 리딩**
 - [SPARK+](https://github.com/SWM-SparkPlus)는 [Apache Spark](https://spark.apache.org/)에서 한국 주소체계 데이터와 위치정보 데이터의 효율적인 처리를 위한 pyspark 패키지 개발하는 프로젝트
   - 프로젝트 기획, 개발 및 [아키텍처 설계](https://github.com/SWM-SparkPlus/rdw-reference-architecture)
-  - Python coding convention 제시
+  - 코드 퀄리티 체크 및 리팩토링 주도
   - 데이터 병목 해결
     - EMR(Spark cluster)에서 데이터를 읽어올 때 Kinesis가 병목지점 [참고](https://docs.aws.amazon.com/streams/latest/dev/service-sizes-and-limits.html)
     - MSK(Managed Kafka)로 전환하여 해결했으나 비용적으로 부담
     - SPARK+ 프로젝트 상황에서는 적절한 선택이었으나 유사한 기술 선택시 목표치와 확장가능성을 염두로 하고 결정하는 것을 배움
+  - 프로젝트 인력분배, 일정관리
 
 **2021.07 ~  [Spark+ DB updater](https://github.com/SWM-SparkPlus/db-updater) 개발 및 유지보수**
 - [SPARK+](https://github.com/SWM-SparkPlus)는 [Apache Spark](https://spark.apache.org/)에서 한국 주소체계 데이터와 위치정보 데이터의 효율적인 처리를 위한 pyspark 패키지 개발하는 프로젝트
