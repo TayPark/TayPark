@@ -1,6 +1,6 @@
 ## 박태형(Tay Park)
-- 2021.04 - 2021.11 과학기술정보통신부, 한국정보산업연합회 산하 소프트웨어 마에스트로 12기
-- 백엔드, 인프라, 데이터에 관심
+- 소프트웨어 마에스트로 12기
+- 백엔드, 데이터, DevOps에 관심
 - 스킬
   - `Node.js`, `JavaScript(ES6)` and `TypeScript`, `Java`, `Python`
   - `Docker`(+ `docker-compose`)
@@ -11,16 +11,13 @@
     - `CodeBuild`, `CodeDeploy`, `CodePipeline`
     - `EMR`(Apache Spark 3.1), `MSK`(Kafka 2.6), `Kinesis`
     - `SNS`
-  - `Slack`, `Notion`
 
 ---
 
-반갑습니다! **도메인과 요구사항에 바르게 집중하자**라는 모토로 개발하는 **TayPark** 입니다. 이는 아래의 의미입니다.
+반갑습니다! **도메인과 요구사항에 바르게 집중하자**라는 모토로 개발하는 **TayPark** 입니다.
 
-1. 주어진 도메인 내에서
-2. 요구사항에 대한 배경을 이해하고 
-3. 내가 해야할 일을 정확하게 파악하여 진행하고
-4. 그것을 온전히 내 것으로 만드는 것입니다.
+1. 비즈니스 요구사항에 대한 배경의 이해로
+2. 해야할 일을 정확하게 파악하여 실행에 옮기는 것을 말합니다.
 
 여러 사람을 만나며 서로의 어두운 부분을 밝혀주는 대화을 좋아합니다. 잘 부탁드립니다.
 
@@ -101,17 +98,6 @@
 - 서버
     - Node.js API 서버
     - MongoDB
-
----
-
-**2020.08 ~ 2020.09 [REST API 구현](https://github.com/TayPark/node-rest-api) (오픈 만화번역 SNS 프로젝트의 기반 설계)**
-
-- Node.js 백엔드 개발
-- Database
-    - 캐싱(Redis)
-    - MySQL + Sequelize(ORM)
-- Error reporting
-    - Sentry
 
 ---
 
