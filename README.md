@@ -1,1 +1,1 @@
-1년차 용두사미 데이터 엔지니어. 아이디어스에서 데이터 플랫폼을 만듭니다.
+Data Engineer at startups.
